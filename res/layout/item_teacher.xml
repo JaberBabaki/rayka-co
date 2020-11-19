@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay_itemm"
+        android:layout_width="match_parent"
+        android:layout_height="210dip"
+        android:layout_margin="2dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/shape_details_product"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:gravity="center"
+            android:orientation="vertical" android:layout_weight="0.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_name_teacher"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center"
+                    android:singleLine="false"
+                    android:text="---"
+                    android:textColor="#BD081C"
+                    android:textSize="12dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:background="@drawable/shape_pic"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.CircularNetworkImageView
+                        android:id="@+id/img_teacher"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="2dip" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:orientation="vertical" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_header_rezumeh_teacher"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="#BD081C"
+                    android:textSize="12dip" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="2dip"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_rezuneh1"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center"
+                    android:singleLine="false"
+                    android:text="---"
+                    android:textColor="#3AAF85"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/submit_filter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout04"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="2dip"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_rezuneh2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center"
+                    android:singleLine="false"
+                    android:text="---"
+                    android:textColor="#3AAF85"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/submit_filter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="2dip"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_rezuneh3"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center"
+                    android:singleLine="false"
+                    android:text="---"
+                    android:textColor="#3AAF85"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/submit_filter" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

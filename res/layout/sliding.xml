@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="280dip"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:background="#272727"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginBottom="2dip"
+        android:background="#272727"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:gravity="top|center">
+
+            <LinearLayout
+                android:layout_width="150dip"
+                android:layout_height="35dip"
+                android:orientation="vertical" android:gravity="center" android:layout_marginTop="32dip">
+
+                <ImageView
+                    android:id="@+id/ImageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/rayka_logo" android:layout_marginRight="1dip" android:layout_marginLeft="1dip" android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/newControlTextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:text="گروه آموزشی رایکا" android:textColor="#838D99" android:layout_marginTop="4dip" android:layout_marginBottom="2dip" android:textSize="10dip" android:layout_marginLeft="2dip" android:layout_marginRight="2dip" android:gravity="center" android:layout_weight="0.2"/>
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/txt_usename_sliding"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="4dip"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="اول بودن عادت ماست"
+                android:textColor="#AF431C"
+                android:textSize="13dip" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#272727" android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/lay_all_sliding"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:orientation="vertical" android:background="#272727">
+
+            <LinearLayout
+                android:id="@+id/lay_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_news_sl"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="صفحه اصلی"
+                        android:textColor="#FEFEF6"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="48dip"
+                        android:layout_height="30dip"
+                        android:src="@drawable/home" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_login_sliding"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout06"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_login_register_sliding"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="ورود و ثبت نام"
+                        android:textColor="#FEFEF6"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView07"
+                        android:layout_width="48dip"
+                        android:layout_height="30dip"
+                        android:src="@drawable/login_and_register" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_panel_mangment"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout15"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView02"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="مدیریت محصول"
+                        android:textColor="#FEFEF6"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView10"
+                        android:layout_width="48dip"
+                        android:layout_height="30dip"
+                        android:src="@drawable/management" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#272727"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout04"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView01"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="دسته بندی"
+                        android:textColor="#fffff6"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="48dip"
+                        android:layout_height="34dip"
+                        android:src="@drawable/menu" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_necessary"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="آموزش حضوری"
+                        android:textColor="#fffff6"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView08"
+                        android:layout_width="48dip"
+                        android:layout_height="34dip"
+                        android:src="@drawable/cbt" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_idea"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="اساتید رایکا"
+                        android:textColor="#ffffff"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="48dip"
+                        android:layout_height="30dip"
+                        android:src="@drawable/teacher_rayka" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#272727"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout14"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView03"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="ارتباط با ما"
+                        android:textColor="#ffffff"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView09"
+                        android:layout_width="48dip"
+                        android:layout_height="34dip"
+                        android:src="@drawable/mail" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_survey"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout09"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="معرفی به دوستان"
+                        android:textColor="#ffffff"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView05"
+                        android:layout_width="48dip"
+                        android:layout_height="34dip"
+                        android:src="@drawable/share" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout07"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:text="وب سایت برنامه"
+                        android:textColor="#fffff6"
+                        android:textSize="14dip" android:gravity="center" android:layout_weight="0.6"/>
+
+                    <ImageView
+                        android:id="@+id/ImageView06"
+                        android:layout_width="48dip"
+                        android:layout_height="34dip"
+                        android:src="@drawable/domain_registration" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout08"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_about"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="درباره ما"
+                        android:textColor="#ffffff"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="48dip"
+                        android:layout_height="34dip"
+                        android:src="@drawable/information" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

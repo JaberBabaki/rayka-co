@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dip"
+        android:background="#1A75BC"
+        android:gravity="right" >
+
+        <LinearLayout
+            android:id="@+id/lay_notific"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/lay_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/magnifying" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/left_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_notific"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_notific_header"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/notification" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_basket"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="48dip"
+                    android:layout_height="match_parent" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_count_product"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="8dip"
+                        android:background="@drawable/shape_pic"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="10dip"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dip"
+                        android:src="@drawable/basket" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_menue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center" >
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/txt_name_program"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رایکا"
+                android:textColor="#ffffff"
+                android:textSize="15dip"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/men"
+                android:layout_width="48dip"
+                android:layout_height="27dip"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_check_internet"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.23"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_signal"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.23"
+                android:orientation="vertical" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/NewControlTextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="خطا در اتصال به اینترنت"
+                    android:textColor="#000000"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_check_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="30dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="30dip"
+                android:layout_weight="0.23"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/NewControlTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="بررسی تنظیمات شبکه"
+                    android:textColor="#000000"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.23"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/lay_check_refresh"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_no_connect"
+                        android:layout_width="250dip"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="4dip"
+                        android:background="@drawable/button_send_corner_selector"
+                        android:text="تلاش مجدد"
+                        android:textColor="#ffffff"
+                        android:textSize="13dip" />
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="تلاش مجدد"
+                        android:textColor="#000000"
+                        android:textSize="16dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_check_mobile"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="شبکه موبایل"
+                        android:textColor="#000000"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.raykaco.android.customcontrol.CustomProgress
+            android:id="@+id/CustomProgress1"
+            android:layout_width="60dip"
+            android:layout_height="60dip" />
+
+        <com.raykaco.android.customcontrol.NewControlTextView
+            android:id="@+id/newControlTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لطفا منتظر بمانید..." />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_lst_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lay_main_show_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout02"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/shape_details_product"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <EditText
+                            android:id="@+id/edt_name_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_send_corner_dialog_box"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="نام"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="14dip" android:padding="10dip"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout01"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape_details_product"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <EditText
+                            android:id="@+id/edt_mail_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_send_corner_dialog_box"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="ایمیل"
+                            android:imeOptions="actionNext"
+                            android:inputType="text|textEmailAddress"
+                            android:singleLine="true"
+                            android:textSize="14dip" android:padding="10dip"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout04"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape_details_product"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <EditText
+                            android:id="@+id/edt_subject_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_send_corner_dialog_box"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="موضوع"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="14dip" android:padding="10dip"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="18dip"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/shape_details_product"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <EditText
+                            android:id="@+id/edt_text_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_send_corner_dialog_box"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="متن پیام"
+                            android:imeOptions="actionNext|actionDone"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="14dip" android:padding="10dip"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/txt_description_detils"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_margin="8dip"
+                            android:layout_weight="0.2"
+                            android:gravity="right"
+                            android:text="---"
+                            android:textColor="#4183A5" />
+
+                        <Button
+                            android:id="@+id/btn_more_descrip_detils"
+                            android:layout_width="fill_parent"
+                            android:layout_height="28dip"
+                            android:layout_marginBottom="8dip"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="8dip"
+                            android:layout_weight="0.2"
+                            android:background="#a6a6a6"
+                            android:paddingRight="20dip"
+                            android:text="بیشتر"
+                            android:textColor="#ffffff"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_topic_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dip"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/RelativeLayout1"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.3" >
+
+                            <Button
+                                android:id="@+id/btn_send_message"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="8dip"
+                                android:layout_marginRight="8dip"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/button_send_corner_selector"
+                                android:paddingRight="20dip"
+                                android:text="ارسال پیام"
+                                android:textColor="#ffffff"
+                                android:textSize="14dip" android:layout_marginTop="8dip" android:layout_marginBottom="8dip"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:descendantFocusability="beforeDescendants" android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="80dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="80dip"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_margin="1dip"
+            android:background="@drawable/shape_dialog_color"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/txt_dialog_header"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dip"
+                android:gravity="right|center"
+                android:singleLine="false"
+                android:text="ورود و ثبت نام"
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_details_product"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/edt_username_dialog_login"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="نام کاربری"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:textSize="14dip" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_details_product"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/edt_pas_dialog_login"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="رمز عبور"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:textSize="14dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_confim_pas_dialog_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_details_product"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edt_confim_pas_dialog_login"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="تکرار رمز عبور"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:textSize="14dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="16dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lay_forgot_dialog_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:gravity="center" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_price_tiles"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="* رمز عبور یادم نیست"
+                    android:textColor="#00c853"
+                    android:textSize="11dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_register_dialog_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:gravity="center" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_register_dialog_login"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="* همین الان عضو رایکا میشم"
+                    android:textColor="#00c853"
+                    android:textSize="11dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_login_dialog_login"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="16dip"
+            android:gravity="bottom|center" >
+
+            <Button
+                android:id="@+id/btn_login_and_register_back"
+                android:layout_width="0dp"
+                android:layout_height="38dip"
+                android:layout_marginRight="4dip"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:text="بازگشت"
+                android:textColor="#D6564B"
+                android:textSize="13dip" />
+
+            <Button
+                android:id="@+id/btn_login_dialog_login"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:text="ورود"
+                android:textColor="#D6564B"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

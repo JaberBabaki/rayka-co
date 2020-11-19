@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="80dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="100dip"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/shape_dialog_color"
+            android:gravity="center"
+            android:orientation="vertical" android:layout_margin="1dip">
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/txt_dialog_header"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dip"
+                android:gravity="right|center"
+                android:singleLine="false"
+                android:text="سلام و علیکم"
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:background="#ffffff"
+            android:orientation="vertical" android:layout_margin="1dip" android:layout_marginBottom="50dip" android:layout_marginLeft="70dip" android:layout_weight="0.5">
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:fillViewport="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/lay_main_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/txt_text_dialog"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="8dip"
+                            android:gravity="right"
+                            android:singleLine="false"
+                            android:text="تایید"
+                            android:textColor="#000000"
+                            android:textSize="13dip" android:layout_marginLeft="4dip" android:lineSpacingExtra="15dip"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_margin="1dip"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5" android:visibility="gone">
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/NewControlTextView01"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center"
+                    android:singleLine="false"
+                    android:text="مولف دو کتاب در زمینه سویئچ و روتر"
+                    android:textColor="#D6564B"
+                    android:textSize="12dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5" android:gravity="center">
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/txt_ok_dialog"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="تایید"
+                    android:textColor="#D6564B"
+                    android:textSize="15dip" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

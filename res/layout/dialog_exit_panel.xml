@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" android:background="@drawable/shape_dialog" android:layout_marginBottom="190dip" android:layout_marginTop="190dip" android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dip"
+            android:gravity="center_vertical|center_horizontal" android:visibility="gone">
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/txt_header_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dip"
+                android:gravity="right|center"
+                android:text="خروج"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16dip" />
+
+        </LinearLayout>
+
+        <com.raykaco.android.customcontrol.NewControlTextView
+            android:id="@+id/txt_message_conected"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:text="آیا قصد خروج از پنل خود را دارید؟"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="16dip" android:layout_margin="8dip" android:layout_gravity="center" android:gravity="right|center" android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_margin="2dip" android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_weight="0.5"
+                android:text="موافقم"
+                android:visibility="visible" android:background="#ffffff" android:layout_marginRight="2dip" android:textColor="#D6564B"/>
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_weight="0.5"
+                android:text="مخالفم" android:background="#ffffff" android:layout_marginLeft="2dip" android:textColor="#D6564B"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

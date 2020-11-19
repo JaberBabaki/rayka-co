@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="180dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="180dip"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:background="#D6564B"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="100dip"
+            android:background="@drawable/shape_dialog_color"
+            android:orientation="vertical" android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:orientation="vertical" android:layout_weight="0.8">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_marginTop="60dip"
+                    android:background="#D6564B"
+                    android:orientation="vertical" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_teacher_name_rezumeh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="55dip"
+                        android:gravity="center"
+                        android:text="مهندس مجید اسدپور"
+                        android:textColor="#ffffff"
+                        android:textSize="18dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="#D6564B"
+                    android:orientation="vertical" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_header_teacher_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="فوق لیسانس هوش مصنوعی از دانشگاه امیر کبیر"
+                        android:textColor="#ffffff"
+                        android:textSize="18dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dip"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="24dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_rezuneh1"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="0.5"
+                        android:gravity="right|center"
+                        android:singleLine="false"
+                        android:text="عضوء هیئت علمی دانشگاه مازندران"
+                        android:textColor="#ffffff"
+                        android:textSize="18dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="32dip"
+                        android:layout_height="32dip"
+                        android:layout_marginRight="16dip"
+                        android:src="@drawable/quality" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="30dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_rezuneh2"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="0.5"
+                        android:gravity="right|center"
+                        android:singleLine="false"
+                        android:text="مدرس دوره های سیسکو"
+                        android:textColor="#ffffff"
+                        android:textSize="18dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="32dip"
+                        android:layout_height="32dip"
+                        android:layout_marginRight="16dip"
+                        android:src="@drawable/quality" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="30dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_rezuneh3"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="0.5"
+                        android:gravity="right|center"
+                        android:singleLine="false"
+                        android:text="مولف دو کتاب در زمینه سویئچ و روتر"
+                        android:textColor="#ffffff"
+                        android:textSize="18dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="32dip"
+                        android:layout_height="32dip"
+                        android:layout_marginRight="16dip"
+                        android:src="@drawable/quality" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout06"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="4dip"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" android:layout_weight="0.2" android:layout_marginBottom="40dip">
+
+                <ImageView
+                    android:id="@+id/ImageView05"
+                    android:layout_width="0dip"
+                    android:layout_height="38dip"
+                    android:layout_margin="2dip"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/mo"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ImageView06"
+                    android:layout_width="0dip"
+                    android:layout_height="38dip"
+                    android:layout_margin="2dip"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/telegram"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ImageView07"
+                    android:layout_width="0dip"
+                    android:layout_height="38dip"
+                    android:layout_margin="2dip"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/linkedin"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ImageView08"
+                    android:layout_width="0dip"
+                    android:layout_height="38dip"
+                    android:layout_margin="2dip"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/facebookk"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dip"
+            android:background="@drawable/shape_pic"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.raykaco.android.customcontrol.CircularNetworkImageView
+                android:id="@+id/img_short_rezumeh"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="2dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

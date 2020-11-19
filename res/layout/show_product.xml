@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dip"
+        android:background="#1A75BC"
+        android:gravity="right" >
+
+        <LinearLayout
+            android:id="@+id/lay_notific"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/lay_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/left_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/magnifying" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_notific"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_notific_header"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/notification" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_basket"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="48dip"
+                    android:layout_height="match_parent" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/txt_count_product"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="8dip"
+                        android:background="@drawable/shape_pic"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="10dip"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ImageView06"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dip"
+                        android:src="@drawable/basket" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_menue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center" >
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/txt_name_program"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رایکا"
+                android:textColor="#ffffff"
+                android:textSize="15dip"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/men"
+                android:layout_width="48dip"
+                android:layout_height="27dip"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.raykaco.android.customcontrol.CustomProgress
+            android:id="@+id/CustomProgress1"
+            android:layout_width="60dip"
+            android:layout_height="60dip" />
+
+        <com.raykaco.android.customcontrol.NewControlTextView
+            android:id="@+id/newControlTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لطفا منتظر بمانید..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_check_internet"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.23"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_signal"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.23"
+                android:orientation="vertical" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/NewControlTextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="خطا در اتصال به اینترنت"
+                    android:textColor="#000000"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_check_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="30dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="30dip"
+                android:layout_weight="0.23"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.raykaco.android.customcontrol.NewControlTextView
+                    android:id="@+id/NewControlTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="بررسی تنظیمات شبکه"
+                    android:textColor="#000000"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.23"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/lay_check_refresh"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_no_connect"
+                        android:layout_width="250dip"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="4dip"
+                        android:background="@drawable/button_send_corner_selector"
+                        android:text="تلاش مجدد"
+                        android:textColor="#ffffff"
+                        android:textSize="13dip" />
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="تلاش مجدد"
+                        android:textColor="#000000"
+                        android:textSize="16dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_check_mobile"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.raykaco.android.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="شبکه موبایل"
+                        android:textColor="#000000"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_lst_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lay_main_show_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:id="@+id/lay_img_show_product"
+                        android:layout_width="fill_parent"
+                        android:layout_height="220dip"
+                        android:background="#fafafa"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_product_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="2dip"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+
+                        <io.vov.vitamio.widget.CenterLayout
+                            android:id="@+id/lay_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/img_product_show"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <io.vov.vitamio.widget.VideoView
+                                android:id="@+id/buffer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" />
+                        </io.vov.vitamio.widget.CenterLayout>
+
+                        <ImageView
+                            android:id="@+id/img_default_show"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/CenterLayout1"
+                            android:layout_margin="4dip"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/resolution"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/img_play"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="4dip"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/play_button"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dip"
+                        android:background="#fafafa"
+                        android:gravity="left|center"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.5"
+                            android:gravity="left|center"
+                            android:orientation="horizontal"
+                            android:visibility="visible" >
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="left|center"
+                                android:orientation="vertical"
+                                android:visibility="visible" >
+
+                                <ImageView
+                                    android:id="@+id/img_shaering"
+                                    android:layout_width="22dip"
+                                    android:layout_height="22dip"
+                                    android:layout_marginLeft="16dip"
+                                    android:src="@drawable/shar" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="right|center"
+                                android:orientation="horizontal"
+                                android:visibility="visible" >
+
+                                <com.raykaco.android.customcontrol.NewControlTextView
+                                    android:id="@+id/txt_view_details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="16dip"
+                                    android:gravity="center"
+                                    android:textColor="#4183A5"
+                                    android:textSize="14dip" />
+
+                                <ImageView
+                                    android:id="@+id/ImageView05"
+                                    android:layout_width="30dip"
+                                    android:layout_height="30dip"
+                                    android:layout_marginRight="16dip"
+                                    android:src="@drawable/eye" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginBottom="8dip"
+                            android:layout_marginTop="8dip"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible" >
+
+                            <com.raykaco.android.customcontrol.NewControlTextView
+                                android:id="@+id/txt_name_details"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dip"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="14dip" />
+
+                            <ImageView
+                                android:id="@+id/ImageView01"
+                                android:layout_width="22dip"
+                                android:layout_height="22dip"
+                                android:layout_marginRight="16dip"
+                                android:src="@drawable/submit_filter" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="58dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="18dip"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/RelativeLayout1"
+                            android:layout_width="0dip"
+                            android:layout_height="55dip"
+                            android:layout_weight="0.3" >
+
+                            <Button
+                                android:id="@+id/btn_rezomeh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginRight="4dip"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/button_send_corner_selector"
+                                android:paddingRight="20dip"
+                                android:text="رزومه استاد"
+                                android:textColor="#ffffff"
+                                android:textSize="12dip" />
+
+                            <ImageView
+                                android:id="@+id/ImageView02"
+                                android:layout_width="22dip"
+                                android:layout_height="22dip"
+                                android:layout_alignRight="@+id/btn_rezomeh"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dip"
+                                android:layout_marginRight="4dip"
+                                android:src="@drawable/user" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/shape_details_product"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible" >
+
+                            <com.raykaco.android.customcontrol.NewControlTextView
+                                android:id="@+id/txt_teacher_detils"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="4dip"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:textColor="#4183A5"
+                                android:textSize="13dip" />
+
+                            <com.raykaco.android.customcontrol.NewControlTextView
+                                android:id="@+id/NewControlTextView13"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="4dip"
+                                android:layout_marginRight="12dip"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="مدرس: "
+                                android:textColor="#000000"
+                                android:textSize="13dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_description_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape_details_product"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/img_descip"
+                            android:layout_width="22dip"
+                            android:layout_height="22dip"
+                            android:layout_marginLeft="16dip"
+                            android:src="@drawable/down_arrow" />
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/NewControlTextView05"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dip"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="توضیحات محصول"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/txt_description_detils"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_margin="8dip"
+                            android:layout_weight="0.2"
+                            android:gravity="right"
+                            android:text="---"
+                            android:textColor="#4183A5" />
+
+                        <Button
+                            android:id="@+id/btn_more_descrip_detils"
+                            android:layout_width="fill_parent"
+                            android:layout_height="28dip"
+                            android:layout_marginBottom="8dip"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="8dip"
+                            android:background="#a6a6a6"
+                            android:paddingRight="20dip"
+                            android:text="بیشتر"
+                            android:textColor="#ffffff"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_topic_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape_details_product"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/img_topic"
+                            android:layout_width="22dip"
+                            android:layout_height="22dip"
+                            android:layout_marginLeft="16dip"
+                            android:src="@drawable/down_arrow" />
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/NewControlTextView01"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dip"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="سرفصل ها"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape_details_product"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <com.raykaco.android.customcontrol.NestedListView
+                            android:id="@+id/lst_topic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:background="#e5e5e5"
+                            android:cacheColorHint="@null"
+                            android:clickable="false"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:divider="@null"
+                            android:dividerHeight="0dip"
+                            android:duplicateParentState="true"
+                            android:focusable="false"
+                            android:visibility="visible" >
+                        </com.raykaco.android.customcontrol.NestedListView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_another_product_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/shape_details_product"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/img_another_product"
+                            android:layout_width="22dip"
+                            android:layout_height="22dip"
+                            android:layout_marginLeft="16dip"
+                            android:src="@drawable/down_arrow" />
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/NewControlTextView03"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dip"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="دیگر محصولات مدرس "
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_another_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="90dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <com.raykaco.android.customcontrol.NestedListView
+                            android:id="@+id/gri_another_product"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:background="#e5e5e5"
+                            android:cacheColorHint="@null"
+                            android:clickable="false"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:divider="@null"
+                            android:dividerHeight="0dip"
+                            android:duplicateParentState="true"
+                            android:focusable="false"
+                            android:visibility="gone" >
+                        </com.raykaco.android.customcontrol.NestedListView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_loading_abother_product"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone" android:layout_marginTop="5dip">
+
+                        <com.raykaco.android.customcontrol.CustomProgress
+                            android:id="@+id/CustomProgress01"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip" />
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/NewControlTextView04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="لطفا منتظر بمانید..."
+                            android:textSize="12dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout01"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginBottom="90dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <com.raykaco.android.customcontrol.NewControlTextView
+                            android:id="@+id/NewControlTextView02"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dip"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/lay_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="false"
+            android:background="#64A7FF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="48dip"
+            android:visibility="visible" >
+
+            <com.raykaco.android.customcontrol.NewControlTextView
+                android:id="@+id/txt_price_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/ImageView10"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/add_buy" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
